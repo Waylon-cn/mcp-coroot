@@ -2192,7 +2192,7 @@ async def create_or_update_role(
 
 def main() -> None:
     """Run the MCP server."""
-    mcp.run()
+    mcp.run(transport="http", host="127.0.0.1", port=8000)
 
 
 if __name__ == "__main__":

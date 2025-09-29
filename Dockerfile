@@ -27,5 +27,8 @@ ENV COROOT_PASSWORD=""
 ENV COROOT_SESSION_COOKIE=""
 ENV COROOT_API_KEY=""
 
+# Expose the port the MCP server will run on
+EXPOSE 8000
+
 # Run the MCP server using the entry point
 CMD [".venv/bin/mcp-coroot"]
